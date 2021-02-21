@@ -1,8 +1,8 @@
 {
-    "numRecordings": "497",
+    "numRecordings": "707",
     "numSpecies": "1",
     "page": 1,
-    "numPages": 1,
+    "numPages": 2,
     "recordings": [
         {
             "id": "618216",
@@ -17473,6 +17473,116 @@
             "time": "6:00",
             "date": "2006-07-17",
             "uploaded": "2008-11-20",
+            "also": [
+                ""
+            ],
+            "rmk": "",
+            "bird-seen": "unknown",
+            "playback-used": "unknown"
+        },
+        {
+            "id": "621083",
+            "gen": "Hirundo",
+            "sp": "rustica",
+            "ssp": "rustica",
+            "en": "Barn Swallow",
+            "rec": "david m",
+            "cnt": "United Kingdom",
+            "loc": "Ryedale District (near Helperthorpe), North Yorkshire, England",
+            "lat": "54.1217",
+            "lng": "-0.542",
+            "alt": "80",
+            "type": "adult, call, male, song",
+            "url": "//www.xeno-canto.org/621083",
+            "file": "//www.xeno-canto.org/621083/download",
+            "file-name": "XC621083-MIXPRE-4098.mp3",
+            "sono": {
+                "small": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC621083-small.png",
+                "med": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC621083-med.png",
+                "large": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC621083-large.png",
+                "full": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC621083-full.png"
+            },
+            "lic": "//creativecommons.org/licenses/by-nc-nd/4.0/",
+            "q": "C",
+            "length": "1:12",
+            "time": "08:04",
+            "date": "2020-08-02",
+            "uploaded": "2021-02-11",
+            "also": [
+                "Delichon urbicum",
+                "Streptopelia decaocto"
+            ],
+            "rmk": "Barn swallow song ... dpa 4060s in parabolic to MixPre3 ... not edited ... background noise ...",
+            "bird-seen": "yes",
+            "playback-used": "no"
+        },
+        {
+            "id": "618217",
+            "gen": "Hirundo",
+            "sp": "rustica",
+            "ssp": "rustica",
+            "en": "Barn Swallow",
+            "rec": "david m",
+            "cnt": "United Kingdom",
+            "loc": "Great Britain (near  Helperthorpe), North Yorkshire, England",
+            "lat": "54.1203",
+            "lng": "-0.5413",
+            "alt": "80",
+            "type": "adult, call, juvenile, male, song",
+            "url": "//www.xeno-canto.org/618217",
+            "file": "//www.xeno-canto.org/618217/download",
+            "file-name": "XC618217-MIXPRE-3982.mp3",
+            "sono": {
+                "small": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC618217-small.png",
+                "med": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC618217-med.png",
+                "large": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC618217-large.png",
+                "full": "//www.xeno-canto.org/sounds/uploaded/BTOFEKXFGW/ffts/XC618217-full.png"
+            },
+            "lic": "//creativecommons.org/licenses/by-nc-nd/4.0/",
+            "q": "C",
+            "length": "0:48",
+            "time": "07:51",
+            "date": "2020-07-24",
+            "uploaded": "2021-01-28",
+            "also": [
+                "Columba palumbus",
+                "Prunella modularis",
+                "Delichon urbicum",
+                "Carduelis carduelis",
+                "Troglodytes troglodytes"
+            ],
+            "rmk": "Swallow call  ... dpa 4060s in parabolic to MixPre3 ... not edited ... background noise ...",
+            "bird-seen": "yes",
+            "playback-used": "no"
+        },
+        {
+            "id": "606130",
+            "gen": "Hirundo",
+            "sp": "rustica",
+            "ssp": "",
+            "en": "Barn Swallow",
+            "rec": "Franck Hollander",
+            "cnt": "Germany",
+            "loc": "Bremerhaven, Bremen",
+            "lat": "53.5342",
+            "lng": "8.6032",
+            "alt": "10",
+            "type": "nocturnal flight call",
+            "url": "//www.xeno-canto.org/606130",
+            "file": "//www.xeno-canto.org/606130/download",
+            "file-name": "XC606130-Hirondelle rustique (1).mp3",
+            "sono": {
+                "small": "//www.xeno-canto.org/sounds/uploaded/SLCZHJNDSI/ffts/XC606130-small.png",
+                "med": "//www.xeno-canto.org/sounds/uploaded/SLCZHJNDSI/ffts/XC606130-med.png",
+                "large": "//www.xeno-canto.org/sounds/uploaded/SLCZHJNDSI/ffts/XC606130-large.png",
+                "full": "//www.xeno-canto.org/sounds/uploaded/SLCZHJNDSI/ffts/XC606130-full.png"
+            },
+            "lic": "//creativecommons.org/licenses/by-nc-sa/4.0/",
+            "q": "C",
+            "length": "0:01",
+            "time": "05:00",
+            "date": "2020-11-06",
+            "uploaded": "2020-11-30",
             "also": [
                 ""
             ],
