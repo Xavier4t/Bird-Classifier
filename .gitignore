@@ -131,3 +131,6 @@ dmypy.json
 # files
 *.mp3
 *.wav
+
+# Directory
+bird_data/features/**.png
