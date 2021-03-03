@@ -26,8 +26,18 @@
     <!-- Animate CSS-->
     <link href="../static/css/animate.css" rel="stylesheet" type="text/css">
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
     </head>
     <body>
 
@@ -72,16 +82,7 @@
 
                             <!--Social Icons in Header-->
                             <ul class="social-icons">
-                                <!-- <li>
-                                    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                                    </a>
-                                </li> -->
-                                <!-- <li>
-                                    <a target="_blank" title="Google+" href="http://google.com/+username">
-                                        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
-                                    </a>
-                                </li> -->
+
                                 <li>
                                     <a target="_blank" title="Twitter" href="https://github.com/Xavier4t">
                                         <i class="fa fa-github fa-1x"></i><span>Github</span>
@@ -92,11 +93,7 @@
                                         <i class="fa fa-linkedin-square fa-1x"></i><span>LinkedIn</span>
                                     </a>
                                 </li>
-                                <!-- <li>
-                                    <a target="_blank" title="behance" href="http://www.behance.net">
-                                        <i class="fa fa-behance fa-1x"></i><span>Behance</span>
-                                    </a>
-                                </li> -->
+
                             </ul>
                             <!--End of Social Icons in Header-->
 
@@ -146,11 +143,6 @@
                         <h1>A BIRD CALL CLASSIFIER PROJECT</h1>
                         <h2>A project to study Neural Networks and apply them to classify bird calls.</h2>
                     </div>
-
-                    <!--Call to Action-->
-                    <!-- <a href="#" class="button">START CREATING TODAY</a> -->
-                    <!--End Call to Action-->
-
                 </div>
 
             </div><!--End of Row-->
@@ -172,7 +164,6 @@
                         </div>
 
                     </div>
-
                     <div class="col-2-3">
 
                         <!--Icon Block-->
@@ -199,7 +190,6 @@
                             <!--Icon Block Description-->
                             <div class="icon-block-description">
                                 <h4>The Challenge</h4>
-                                <!-- <p>There are two ways to identify the birds, with pictures of with the sounds that the birds produce, each one with a differen caveat</p> -->
                                 <p>Select ten bird species common in the Atlanta area and identify them by training a ML model using a collection of sound clips</p>
 
                                 
@@ -282,38 +272,23 @@
                     <div class="col-1">
                         <div class="section-heading">
                             <h3>The Data<Datal></Datal></h3>
-                            <h2 class="section-title">The following map shows the recording locations.</h2>
+                            <h2 class="section-title">Bird recording locations.</h2>
                             <p class="section-subtitle">Make the bird sings</p>
                         </div>
-                        <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                            dicta sunt explicabo.
-                        </p>
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!
-                        </p> -->
-                        <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                        <!-- <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-                            WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-                        </a> -->
-                        <div class="col-1" id="mymap">
-                            <h2>A big map here</h2>
+
+                        <div class="col-1" id='mapa'>
+                            
                         </div>
                     </div>
                     <!--End Content Right Side-->
 
-                    <!-- <div class="col-3">
-                        <img src="images/dancer.jpg" alt="Dancer"/>
-                    </div> -->
-
                 </div>
+                
 
 
             </div>
             <!--End of Content Section-->
-
+            
             <!--Testimonials-->
             <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
 
@@ -420,7 +395,7 @@
             </section>
             <!--End of Clients-->
 
-            <!--Pricing Tables-->
+            <!--Start Tables-->
             <section id="pricing" class="secondary-color text-center scrollto clearfix ">
                 <div class="row clearfix">
 
@@ -429,72 +404,48 @@
                         <h2 class="section-title">Beyond Deep Learning</h2>
                     </div>
 
-                    <!--Pricing Block-->
+                    <!--Block 1-->
                     <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="pricing-block-content">
                             <h3>RNN</h3>
                             <p class="pricing-sub">Recurrent Neural Networks</p>
                             <div class="pricing">
-                                <!-- <div class="price"><span>$</span>19</div> -->
                                 <p>Reanalysis using RNNs</p>
                             </div>
-                            <!-- <ul>
-                                <li>5 Downloads</li>
-                                <li>2 Extensions</li>
-                                <li>Tutorials</li>
-                                <li>Forum Support</li>
-                                <li>1 year free updates</li>
-                            </ul>
-                            <a href="#" class="button">BUY TODAY</a> -->
+
                         </div>
                     </div>
-                    <!--End Pricing Block-->
+                    <!--End Block 1-->
 
-                    <!--Pricing Block-->
+                    <!--Block 2-->
                     <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="pricing-block-content">
                             <h3>APPLICATION</h3>
                             <p class="pricing-sub">Build a real time ML application</p>
                             <div class="pricing">
-                                <!-- <div class="price"><span>$</span>application</div> -->
                                 <p>Real time bird calls classification</p>
                             </div>
-                            <!-- <ul>
-                                <li>15 Downloads</li>
-                                <li>5 Extensions</li>
-                                <li>Tutorials with Files</li>
-                                <li>Forum Support</li>
-                                <li>2 years free updates</li>
-                            </ul>
-                            <a href="#" class="button">BUY TODAY</a> -->
+
                         </div>
                     </div>
-                    <!--End Pricing Block-->
+                    <!--End Block 2-->
 
-                    <!--Pricing Block-->
+                    <!--Block 3-->
                     <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="pricing-block-content">
                             <h3>BEYOND DEEP LEARNING</h3>
                             <p class="pricing-sub">The music of the birds</p>
                             <div class="pricing">
-                                <!-- <div class="price"><span>$</span>49</div> -->
                                 <p>Pitch and harmony analysis</p>
                             </div>
-                            <!-- <ul>
-                                <li>Unlimited Downloads</li>
-                                <li>Unlimited Extensions</li>
-                                <li>HD Video Tutorials</li>
-                                <li>Chat Support</li>
-                                <li>Lifetime free updates</li>
-                            </ul>
-                            <a href="#" class="button">BUY TODAY</a> -->
+
                         </div>
                     </div>
-                    <!--End Pricing Block-->
+                    <!--End Block 3-->
 
                 </div>
             </section>
-            <!--End of Pricing Tables-->
+            <!--End of Tables-->
 
         </main>
         <!--End Main Content Area-->
@@ -518,20 +469,7 @@
                             <i class="fa fa-linkedin-square fa-1x"></i><span>LinkedIn</span>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                            <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                            <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="behance" href="http://www.behance.net">
-                            <i class="fa fa-behance fa-1x"></i><span>Behance</span>
-                        </a> -->
+
                     </li>
                 </ul>
                 <!--End of Social Icons in Footer-->
@@ -541,7 +479,7 @@
 
     </div>
 
-    <!-- Include JavaScript resources -->
+    <!-- Local JavaScript resources -->
     <script src="../static/js/jquery.1.8.3.min.js"></script>
     <script src="../static/js/wow.min.js"></script>
     <script src="../static/js/featherlight.min.js"></script>
@@ -554,7 +492,13 @@
     <script src="../static/js/images-loaded.min.js"></script>
     <script src="../static/js/lightbox.min.js"></script>
     <script src="../static/js/site.js"></script>
+    <script src="../static/js/config.js"></script>
     <script src="../static/js/map.js"></script>
+
+    <!-- External JavaScript resources -->
+
+
+
 
 
     </body>

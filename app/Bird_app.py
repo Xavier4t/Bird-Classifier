@@ -4,6 +4,7 @@ import geojson
 from geojson import FeatureCollection, Feature, Point
 import pandas as pd
 import numpy as np
+from flask import Flask, render_template, jsonify
 
 # path constructor
 def path_constructor(parent, child):
@@ -86,61 +87,61 @@ def index():
 
 # American_Goldfinch
 @app.route("/api/American_Goldfinch")
-def mchick():
+def goldfinch():
     DataBird = jsonify(geojsonData["American_Goldfinch"])
     return DataBird
 
 # American_Robin
 @app.route("/api/American_Robin")
-def woodpecker():
+def robin():
     DataBird = jsonify(geojsonData["American_Robin"])
     return DataBird
 
 # Barn_Swallow
 @app.route("/api/Barn_Swallow")
-def stork():
+def barn():
     DataBird = jsonify(geojsonData["Barn_Swallow"])
     return DataBird
 
 # Blue_Jay
 @app.route("/api/Blue_Jay")
-def anhinga():
+def jay():
     DataBird = jsonify(geojsonData["Blue_Jay"])
     return DataBird
 
 # Blue-grey_Gnatcatcher
 @app.route("/api/Blue-grey_Gnatcatcher")
-def bunting():
+def grey():
     DataBird = jsonify(geojsonData["Blue-grey_Gnatcatcher"])
     return DataBird
 
 # Carolina_Chickadee
 @app.route("/api/Carolina_Chickadee")
-def bunting():
+def chicka():
     DataBird = jsonify(geojsonData["Carolina_Chickadee"])
     return DataBird
 
 # Carolina_Wren
 @app.route("/api/Carolina_Wren")
-def bunting():
+def wren():
     DataBird = jsonify(geojsonData["Carolina_Wren"])
     return DataBird
 
 # Cedar_Waxwing
 @app.route("/api/Cedar_Waxwing")
-def bunting():
+def cedar():
     DataBird = jsonify(geojsonData["Cedar_Waxwing"])
     return DataBird
 
 # Northern_Cardinal
 @app.route("/api/Northern_Cardinal")
-def bunting():
+def cardinal():
     DataBird = jsonify(geojsonData["Northern_Cardinal"])
     return DataBird
 
 # Ruby-crowned_Kinglet
 @app.route("/api/Ruby-crowned_Kinglet")
-def bunting():
+def ruby():
     DataBird = jsonify(geojsonData["Ruby-crowned_Kinglet"])
     return DataBird
     
